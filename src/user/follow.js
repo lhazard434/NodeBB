@@ -8,7 +8,6 @@ const db = require('../database');
 const utils = require('../utils');
 
 module.exports = function (User) {
-	console.log('Lucas Hazard');
 	User.follow = async function (uid, followuid) {
 		await toggleFollow('follow', uid, followuid);
 	};
